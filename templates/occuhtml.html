@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head> Random Occupations?! Welcome to the occupations site where you'll find occupations
+in the U.S. and the percentage that it makes up. 
+<p>
+Below the table you'll find your
+randomly selected occupation. </head>
+<title> Your Random Occupation! </title>
+<body>
+Occupation Table
+<table border = "1">
+<tr>
+<th>Occupations</th>
+	<th>Percentages</th>
+      </tr>
+      {% for entry in jobDict %}
+      <tr>
+	<td> {{entry}} </td>
+	<td> {{ jobDict[entry] }} </td>
+      </tr>
+      {% endfor %}
+    </table>
+<p>
+Your Random Occupation: {{randJob }} 
+</body>
+
+</html>
